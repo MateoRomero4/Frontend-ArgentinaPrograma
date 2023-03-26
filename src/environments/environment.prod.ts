@@ -9,8 +9,7 @@ export const environment = {
     messagingSenderId: '933579506499',
     measurementId: 'G-HVN6HR17L8',
   },
-  production: false,
-  /*URL: 'https://backendportfoliomr.onrender.com/'*/
-  URL: 'http://localhost:8080/'
+  production: true,
+  URL: 'https://backendportfoliomr.onrender.com/'
 
 };
