@@ -1,0 +1,99 @@
+<section class="background-radial-gradient overflow-hidden">
+    <style>
+
+        #max-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .background-radial-gradient {
+            background-color: hsl(218, 41%, 15%);
+            background-image: url('../../../assets/Background-AP.png');
+            background-size: cover;
+            height: 100%;
+        }
+      
+        .bg-glass {
+            border-radius: 2px;
+            border: solid;
+            border-width: 2px;
+            border-color: #18b8ed;
+            color: hsl(218, 81%, 75%);
+            background-color: white !important;
+            backdrop-filter: saturate(200%) blur(25px);
+        }
+  
+        .form-floating {
+            display: flex;
+            align-items: center;
+            height: 106px;
+            margin-bottom: 70px;
+            color: #070934;
+            font-size: 25px;
+            font-weight: bolder;
+            background-color: #c8deff;
+        }
+  
+        .form-control {
+            border: solid;
+            border-width: 0px;
+            font-size: 25px;
+            height: 100px;
+            border-radius: 0px;
+        }
+  
+        .btn-submit {
+            background-color: #070934;
+            color: white;
+            width: 150px;
+            height: 50px;
+            font-size: 25px;
+            font-weight: bold;
+            border: none;
+        }
+  
+        .ar {
+            color: #18b8ed;
+        }
+  
+        .btn {
+            display: flex;
+            justify-content: center;
+            border: none;
+        }
+
+    </style>
+  
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+        <div class="row gx-lg-5 align-items-center mb-5">
+            <div class="col-lg-6 mb-5 mb-lg-0 position-relative" id="max-container">
+                <div class="card bg-glass">
+                    <div class="card-body px-4 py-5 px-md-5">
+                        <form>
+                            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                                <form class="form-floating">
+                                    <input type="text" name="nameE" class="form-control" id="nameE" placeholder="name@example.com" value="" [(ngModel)]="nameE" required>
+                                    <label for="nameE">Ingrese su proyecto</label>
+                                </form>
+                                <form class="form-floating">
+                                    <input type="text" name="descriptionE" class="form-control" id="descriptionE" placeholder="name@example.com" value="" [(ngModel)]="descriptionE" required>
+                                    <label for="descriptionE">Descripcion</label>
+                                </form>
+                                <div class="btn">
+                                    <button type="submit" class="btn-submit">
+                                        <div>
+                                            <span>Agreg</span>
+                                            <span class="ar">ar</span>
+                                        </div>
+                                    </button>
+                                </div>
+                            </form>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

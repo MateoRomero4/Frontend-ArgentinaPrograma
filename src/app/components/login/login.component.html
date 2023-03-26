@@ -1,0 +1,108 @@
+
+<section class="background-radial-gradient overflow-hidden">
+  <style>
+
+    .background-radial-gradient {
+      background-color: hsl(218, 41%, 15%);
+      background-image: url('../../../assets/Background-AP.png');
+      background-size: cover;
+      height: 100%;
+    }
+    .bg-glass {
+      border-radius: 2px;
+      border: solid;
+      border-width: 2px;
+      border-color: #18b8ed;
+      color: hsl(218, 81%, 75%);
+      background-color: white !important;
+      backdrop-filter: saturate(200%) blur(25px);
+    }
+
+    .form-floating {
+      display: flex;
+      align-items: center;
+      height: 106px;
+      margin-bottom: 70px;
+      color: #070934;
+      font-size: 25px;
+      font-weight: bolder;
+      background-color: #c8deff;
+    }
+
+    .form-control {
+      border: solid;
+      border-width: 0px;
+      font-size: 25px;
+      height: 100px;
+      border-radius: 0px;
+      
+    }
+
+    .btn-submit {
+      background-color: #070934;
+      color: white;
+      width: 150px;
+      height: 50px;
+      font-size: 25px;
+      font-weight: bold;
+      border: none;
+      
+    }
+
+    .ar {
+      color: #18b8ed;
+    }
+
+    .btn {
+      display: flex;
+      justify-content: center;
+      border: none;
+    }
+  </style>
+
+  <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+    <div class="row gx-lg-5 align-items-center mb-5">
+      <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+        <h1 class="my-5 display-5 fw-bold ls-tight" style="color: #070934">
+          Trabajo final <br />
+          <span style="color: #18b8ed">Argentina Programa</span>
+        </h1>
+        <p class="mb-4 opacity-70" style="color: #031017; font-size: 20px">
+          Ingrese su nombre de usuario y contraseña para acceder a todas las opciones
+          disponibles según su categoria. 
+        </p>
+      </div>
+
+      <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+        <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+        <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+
+        <div class="card bg-glass">
+          <div class="card-body px-4 py-5 px-md-5">
+            <form>
+            <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+              <form class="form-floating">
+                <input type="email" name="username" class="form-control" id="username" placeholder="name@example.com" value="" [(ngModel)]="username" required>
+                <label for="username">Ingrese su email</label>
+              </form>
+                <form class="form-floating">
+                  <input type="name" name="password" class="form-control" id="password" placeholder="name@example.com" value="" [(ngModel)]="password" required />                  
+                  <label for="password">Ingrese su contraseña</label>
+                </form>
+                <div class="btn">
+                  <button type="submit" class="btn-submit">
+                    <div>
+                      <span>Ingres</span>
+                      <span class="ar">ar</span>
+                    </div>
+                  </button>
+                </div>
+
+            </form>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
