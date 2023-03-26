@@ -93,7 +93,7 @@
                                 <form class="form-floating">
                                     <input type="file" name="person.img" class="form-control" id="floatingInputValue" id="loadphoto" placeholder="name@example.com" value="" [(ngModel)]="person.img" (change)="uploadImage($event)" 
                                     accept=".jpg, .jpeg, .png">
-                                    <label for="floatingInputValue">Ingrese su foto de perfil</label>
+                                    <label for="floatingInputValue">Ingrese su foto de perfil (Esperar la carga)</label>
                                 </form>
                                 <div class="image">
                                     <img [src]="imageService.url" width="200px">

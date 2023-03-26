@@ -81,7 +81,7 @@
                                 <form class="form-floating">
                                     <input type="file" name="banner.img" class="form-control" id="floatingInputValue" id="loadphoto" placeholder="name@example.com" value="" [(ngModel)]="banner.img" (change)="uploadImage($event)" 
                                     accept=".jpg, .jpeg, .png">
-                                    <label for="floatingInputValue">Ingrese el nuevo banner</label>
+                                    <label for="floatingInputValue">Ingrese el nuevo banner (Esperar la carga)</label>
                                 </form>
                                 <div class="image">
                                     <img [src]="imageBannerService.url" width="200px">
